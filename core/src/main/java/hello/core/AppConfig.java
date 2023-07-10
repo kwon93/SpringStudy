@@ -19,7 +19,8 @@ public class AppConfig {
     @Bean
     public MemberService memberService(){ // 역할을 선언하고
         System.out.println("Call AppConfig.memberService");
-        return new MemberServiceImpl(memberRpository()); //연기(구현)를 할 배우를 return
+//        return new MemberServiceImpl(memberRpository()); //연기(구현)를 할 배우를 return
+        return null;
     }
 
     @Bean
@@ -31,7 +32,8 @@ public class AppConfig {
     @Bean
     public OrderService orderService(){
         System.out.println("Call AppConfig.orderService");
-        return new OrderServiceImpl(memberRpository(), discountPolicy());
+//        return new OrderServiceImpl(memberRpository(), discountPolicy());
+        return null;
     }
 
     @Bean
